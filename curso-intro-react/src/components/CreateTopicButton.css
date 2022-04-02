@@ -1,0 +1,11 @@
+.create-topic-button{
+    border-radius: 10px;
+}
+
+.new-topic-button-container{
+  text-align: center;
+}
+
+.create-topic-button-icon{
+  font-size: 2em;
+}
