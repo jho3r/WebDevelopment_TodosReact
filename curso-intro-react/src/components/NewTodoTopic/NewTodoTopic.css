@@ -5,6 +5,7 @@
     margin: 20px;
     width: 28rem;
     display: inline-block;
+    vertical-align: top;
 }
 
 .card-title {

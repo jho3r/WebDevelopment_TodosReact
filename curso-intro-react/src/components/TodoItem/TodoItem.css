@@ -18,3 +18,7 @@
 .item-delete-icon:hover {
     color: red;
 }
+
+.todo-completed {
+    text-decoration: line-through;
+}

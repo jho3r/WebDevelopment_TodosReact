@@ -1,6 +1,6 @@
 import React from "react";
-import {CreateTopicButton} from './CreateTopicButton';
-import './TodoTopic.css';
+import {CreateTopicButton} from '../CreateTopicButton/index';
+import './NewTodoTopic.css';
 
 function NewTodoTopic(props) {
   return (
