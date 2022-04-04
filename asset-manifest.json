@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/WebDevelopment_TodosReact/static/css/main.39be3658.css",
+    "main.js": "/WebDevelopment_TodosReact/static/js/main.dadabe57.js",
+    "index.html": "/WebDevelopment_TodosReact/index.html",
+    "main.39be3658.css.map": "/WebDevelopment_TodosReact/static/css/main.39be3658.css.map",
+    "main.dadabe57.js.map": "/WebDevelopment_TodosReact/static/js/main.dadabe57.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39be3658.css",
+    "static/js/main.dadabe57.js"
+  ]
+}
