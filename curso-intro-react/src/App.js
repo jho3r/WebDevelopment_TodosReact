@@ -1,14 +1,14 @@
 // import './App.css';
 import React from 'react';
 import { AppUI } from './AppUI';
-import { TodoProvider } from './contexts/TopicContext';
+import { TopicProvider } from './contexts/TopicContext';
 
 
 function App() {
   return (
-    <TodoProvider>
+    <TopicProvider>
       <AppUI />
-    </TodoProvider>
+    </TopicProvider>
   );
 }
 

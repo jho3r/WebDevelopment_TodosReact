@@ -1,9 +1,9 @@
 import React from "react";
 import { useLocalStorage } from "./useLocalStorage";
 
-const TodoContext = React.createContext();
+const TopicContext = React.createContext();
 
-function TodoProvider(props){
+function TopicProvider(props){
 
     const {item:topics, saveItem:saveTopics, loading} = useLocalStorage('topics_v1', []);
 
@@ -30,15 +30,15 @@ function TodoProvider(props){
     };
 
     return (
-        <TodoContext.Provider value={{
+        <TopicContext.Provider value={{
             topics,
             addTopic,
             saveTodos,
             loading,
         }}>
             {props.children}
-        </TodoContext.Provider>
+        </TopicContext.Provider>
     );
 }
 
-export { TodoProvider, TodoContext };
+export { TopicProvider, TopicContext };
