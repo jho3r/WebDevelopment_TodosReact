@@ -10,3 +10,8 @@
     padding: 20px;
     text-align: center;
 }
+
+.loading-modal .modal-content{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}

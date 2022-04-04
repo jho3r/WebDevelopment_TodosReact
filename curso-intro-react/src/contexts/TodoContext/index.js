@@ -33,6 +33,16 @@ function TodoProvider({ title, todos, saveTodos, ...props }) {
         saveTodos(title,newTodos);
     }
 
+    const onTodoAdded = (text) => {
+        const newTodo = {
+            id: Date.now(),
+            text,
+            completed: false,
+        };
+        const newTodos = [...todos, newTodo];
+        saveTodos(title,newTodos);
+    }
+
     const onDoubleClick = () => {
         setTitleEditable(true);
     }
@@ -53,6 +63,7 @@ function TodoProvider({ title, todos, saveTodos, ...props }) {
             setSearchValue,
             onTodoCompleted,
             onTodoDeleted,
+            onTodoAdded,
             filteredTodos,
             titleEditable,
             onDoubleClick,

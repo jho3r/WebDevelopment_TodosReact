@@ -8,6 +8,7 @@ import {CreateTodoButton} from '../CreateTodoButton/index';
 import { TopicTitle } from "../TopicTitle";
 import {TodoContext} from '../../contexts/TodoContext';
 import { Modal } from "../Modal";
+import { TodoForm } from "../TodoForm";
 import './TodoTopic.css';
 
 function TodoTopicUI(){
@@ -34,7 +35,7 @@ function TodoTopicUI(){
                 </TodoList>
 
                 <Modal modalTitle="Nueva tarea">
-                    Hola mundo
+                    <TodoForm />
                 </Modal>
 
                 <CreateTodoButton />
