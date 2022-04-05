@@ -1,16 +1,13 @@
 import React from "react";
-import { TodoContext } from "../../contexts/TodoContext";
 import './TopicTitle.css';
 
-function TopicTitle() {
-
-    const {
-        title,
-        titleEditable,
-        onDoubleClick,
-        onKeyDown,
-    } = React.useContext(TodoContext);
-
+function TopicTitle({
+    title,
+    titleEditable,
+    onDoubleClick,
+    onKeyDown,
+}) {
+    
     return (
         <h1 
         className="card-title" 
