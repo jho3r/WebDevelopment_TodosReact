@@ -1,17 +1,10 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 import {default as BModal} from 'react-bootstrap/Modal';
-import { TodoContext } from '../../contexts/TodoContext';
 
 const modalElement = document.getElementById('modal');
 
-function Modal(props) {
-
-  const {
-      openModal,
-      setOpenModal,
-      onTodoAdded,
-  } = React.useContext(TodoContext);
+function NewTodoModal({openModal, setOpenModal, onTodoAdded, ...props}) {
 
   const handleClose = () => {
     setOpenModal(false);
@@ -54,4 +47,4 @@ function Modal(props) {
   );
 }
 
-export { Modal };
+export { NewTodoModal };

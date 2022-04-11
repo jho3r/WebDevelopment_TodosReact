@@ -1,13 +1,11 @@
 import React from "react";
 
-const TodoContext = React.createContext();
-
-function TodoProvider({ title, todos, saveTodos, ...props }) {
+function useTodos( title, todos, saveTodos ) {
 
     const [searchValue, setSearchValue] = React.useState('');
     const [titleEditable, setTitleEditable] = React.useState(false);
     const [openModal, setOpenModal] = React.useState(false);
-
+    
     const completedTodos = todos.filter(todo => !!todo.completed).length;
     const totalTodos = todos.length;
     let filteredTodos = [];
@@ -55,7 +53,7 @@ function TodoProvider({ title, todos, saveTodos, ...props }) {
     }
 
     return (
-        <TodoContext.Provider value={{
+        {
             title,
             totalTodos,
             completedTodos,
@@ -70,10 +68,8 @@ function TodoProvider({ title, todos, saveTodos, ...props }) {
             onKeyDown,
             openModal,
             setOpenModal
-        }}>
-            {props.children}
-        </TodoContext.Provider>
+        }
     );
 }
 
-export { TodoProvider, TodoContext };
+export { useTodos };
