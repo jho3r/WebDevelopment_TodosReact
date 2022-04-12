@@ -5,7 +5,7 @@ function TopicList(props) {
     <section className="topic-list">
         {props.error && props.onError()}
         {props.loading && props.onLoading()}
-        {props.topics.map(topic => props.render(topic))}
+        {(!props.error && !props.loading) && props.topics.map(topic => props.render(topic))}
 
     </section>
   )

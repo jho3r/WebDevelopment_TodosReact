@@ -31,9 +31,9 @@ function useLocalStorage(itemName, initialValue) {
             localStorage.setItem(itemName, JSON.stringify(parsedItem));
           }
           
-          //throw new Error('Error');
           setItem(parsedItem);
           setLoading(false);
+          //throw new Error('Error');
           
         } catch (error) {
           console.log(error);

@@ -46,15 +46,29 @@ function TodoTopic({ title:titleTopic, todos, saveTodos }) {
                     searchValue={searchValue}
                     setSearchValue={setSearchValue} />
             </TopicHeader>
-            <TodoList>
-                {filteredTodos.map(todo => (
+            <TodoList
+                totalTodos={totalTodos}
+                filteredTodos={filteredTodos}
+                searchValue={searchValue}
+                onEmptyTodos={() => <p className="text-center">No hay tareas</p>}
+                onEmptySearch={(searchVal) => <p className="text-center">No hay resultados para {searchVal}</p>}
+                // render={todo => (
+                //     <TodoItem 
+                //         key={todo.id}
+                //         text={todo.text} 
+                //         completed={todo.completed}
+                //         onTodoCompleted={() => onTodoCompleted(todo)}
+                //         onTodoDeleted={() => onTodoDeleted(todo) } />
+                // )}
+            >
+                {todo => (
                     <TodoItem 
                         key={todo.id}
                         text={todo.text} 
                         completed={todo.completed}
                         onTodoCompleted={() => onTodoCompleted(todo)}
                         onTodoDeleted={() => onTodoDeleted(todo) } />
-                ))}
+                )}
             </TodoList>
 
             <NewTodoModal 
