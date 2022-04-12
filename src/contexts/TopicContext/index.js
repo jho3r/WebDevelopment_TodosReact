@@ -5,7 +5,7 @@ const TopicContext = React.createContext();
 
 function TopicProvider(props){
 
-    const {item:topics, saveItem:saveTopics, loading} = useLocalStorage('topics_v1', []);
+    const {item:topics, saveItem:saveTopics, loading, error} = useLocalStorage('topics_v1', []);
 
     const saveTodos = (id, title, todos) => {
         const newTopics = topics.map(topic => {
@@ -35,6 +35,7 @@ function TopicProvider(props){
             addTopic,
             saveTodos,
             loading,
+            error,
         }}>
             {props.children}
         </TopicContext.Provider>
