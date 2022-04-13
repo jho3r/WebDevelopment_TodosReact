@@ -5,6 +5,7 @@ import { LoadingModal } from './components/LoadingModal';
 import { TopicContext } from './contexts/TopicContext';
 import { TopicList } from './components/TopicList';
 import { ErrorTopic } from './components/ErrorTopic';
+import { TodosBody } from './components/TodosBody';
 import './App.css';
 
 function AppUI() {
@@ -18,10 +19,8 @@ function AppUI() {
   } = React.useContext(TopicContext);
   
   return (
-    <React.Fragment>
+    <TodosBody loading={loading} error={error} >
       <TopicList 
-        loading = {loading}
-        error = {error}
         topics = {topics}
         onLoading = {() => <LoadingModal /> }
         onError = {() => <ErrorTopic /> }
@@ -34,9 +33,9 @@ function AppUI() {
                   )}
       />
       
-      <NewTodoTopic title="Nueva Lista" addTopic={addTopic} error={error} />
+      <NewTodoTopic title="Nueva Lista" addTopic={addTopic} />
       
-    </React.Fragment>
+    </TodosBody>
   );
 }
 
