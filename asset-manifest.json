@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/WebDevelopment_TodosReact/static/css/main.39be3658.css",
-    "main.js": "/WebDevelopment_TodosReact/static/js/main.dadabe57.js",
-    "index.html": "/WebDevelopment_TodosReact/index.html",
-    "main.39be3658.css.map": "/WebDevelopment_TodosReact/static/css/main.39be3658.css.map",
-    "main.dadabe57.js.map": "/WebDevelopment_TodosReact/static/js/main.dadabe57.js.map"
+    "main.css": "/web-course-react-todosapp/static/css/main.98c65d58.css",
+    "main.js": "/web-course-react-todosapp/static/js/main.034b416a.js",
+    "index.html": "/web-course-react-todosapp/index.html",
+    "main.98c65d58.css.map": "/web-course-react-todosapp/static/css/main.98c65d58.css.map",
+    "main.034b416a.js.map": "/web-course-react-todosapp/static/js/main.034b416a.js.map"
   },
   "entrypoints": [
-    "static/css/main.39be3658.css",
-    "static/js/main.dadabe57.js"
+    "static/css/main.98c65d58.css",
+    "static/js/main.034b416a.js"
   ]
 }
